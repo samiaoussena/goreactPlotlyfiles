@@ -60,7 +60,7 @@ stage(' Publish'){
     sh """cd $GOPATH/src/project/ && docker-compose build"""
  
     // need to push the image to the docker hub
-    docker push registry-host:5000/predictive/project
+    //docker push registry-host:5000/predictive/project
     // Need to archive the image that has been created
  
     git add  ${archive}
